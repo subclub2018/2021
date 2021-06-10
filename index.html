@@ -63,98 +63,10 @@
     </nav>
 
     <header>
-                  <canvas id="myCanvas"></canvas>
+            <canvas id="c"></canvas>
+<!-- partial -->
+  <script type="module" src="./script1.js"></script>
 
-                  <script src="three.js"></script>
-                  <script src="GLTFLoader.js"></script>
-              
-                  <script>
-              
-                  var renderer,
-                    scene,
-                    camera,
-                    control,
-                    myCanvas = document.getElementById('myCanvas');
-              
-                  //RENDERER
-                  renderer = new THREE.WebGLRenderer({
-                    canvas: myCanvas, 
-                    antialias: true
-                    
-                  });
-                  renderer.setClearColor(0x000000);
-                  renderer.setPixelRatio(window.devicePixelRatio);
-                  renderer.setSize(window.innerWidth, window.innerHeight);
-              
-                  //CAMERA
-                  camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 1, 1000 );
-
-                
-              
-                  //SCENE
-                  scene = new THREE.Scene();
-
-                  // 创建一个纹理图片加载器加载图片
-                   var textureLoader = new THREE.TextureLoader();
-                 // 加载背景图片
-                   var texture = textureLoader.load('../img/pic1.jpg');
-                  // 纹理对象Texture赋值给场景对象的背景属性.background
-                   scene.background = texture
-                  
-
-              
-                  //LIGHTS
-                  var light = new THREE.AmbientLight(0xffffff, 0.9);
-                  scene.add(light);
-              
-                  var light2 = new THREE.PointLight(0xffffff, 0.9);
-                  scene.add(light2);
-                
-                  var loader = new THREE.GLTFLoader();
-              
-                  loader.load('phonedone.gltf', handle_load);
-              
-                  var mesh;
-              
-                  
-              
-                  function handle_load(gltf) {
-              
-                      console.log(gltf);
-                      mesh = gltf.scene;
-                      console.log(mesh.children[0]);
-                      mesh.children[0].material = new THREE.MeshLambertMaterial();
-                  scene.add( mesh );
-                      mesh.position.z = -10;
-
-                  }
-              
-              
-                  //RENDER LOOP
-                  render();
-              
-                  var delta = 0;
-                  var prevTime = Date.now();
-              
-                  function render() {
-              
-                      delta += 0.1;
-              
-                      if (mesh) {
-                      
-                          mesh.rotation.y += 0.00;
-              
-                          //animation mesh
-                          // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
-                      }
-
-
-              
-                    renderer.render(scene, camera);
-              
-                    requestAnimationFrame(render);
-                  }              
-                  </script>              
                 
         <div class="audioembed">
           <audio controls="true" autoplay="true" src="audio.mp3"  onloadeddata="setLowVolume()" id="audio1">
