@@ -21,10 +21,10 @@ function main() {
   controls.update();
 
   const scene = new THREE.Scene();
-  /*scene.background.image = url('pic1.jpg');*/
+  /*scene.background.image = url('pic1.jpg');
   var bgTexture = new THREE.TextureLoader().load("pic2.jpg");
 bgTexture.minFilter = THREE.LinearFilter;
-scene.background = bgTexture;
+scene.background = bgTexture; */
 
 
 
@@ -85,7 +85,7 @@ scene.background = bgTexture;
       const boxCenter = box.getCenter(new THREE.Vector3());
 
       // set the camera to frame the box
-      frameArea(boxSize * 0.5, boxSize, boxCenter, camera);
+      frameArea(boxSize * 0.25, boxSize, boxCenter, camera);
 
       // update the Trackball controls to handle the new size
       controls.maxDistance = boxSize * 10;
