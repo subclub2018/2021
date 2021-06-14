@@ -337,7 +337,7 @@ section .title {
   color:#fff;
   font-size:13px;
   padding:15px 35px;
-  background:#900d0d;
+  background:#dd64b9;
   margin-top:10px;
 }
 .btn-buynow:hover {
@@ -424,7 +424,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 @media (min-width:992px) {
 
   .bg-primary {
-  	background:#37488a;
+  	background:#5a72c2;
   }
   .text-primary {
   	color:#fdcc52
@@ -643,3 +643,17 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 	text-decoration: none;
 	color: rgba(96, 66, 90, 0.9);
   }
+
+
+  .flip {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	overflow: hidden;
+}
+.flip iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
