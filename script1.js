@@ -21,9 +21,9 @@ function main() {
   controls.update();
 
   const scene = new THREE.Scene();
-  /*scene.background.image = url('pic1.jpg');
+  /*scene.background.image = url('pic1.jpg');*/
   var bgTexture = new THREE.TextureLoader().load("pic2.jpg");
-bgTexture.minFilter = THREE.LinearFilter;
+/*bgTexture.minFilter = THREE.LinearFilter;
 scene.background = bgTexture; */
 
 
