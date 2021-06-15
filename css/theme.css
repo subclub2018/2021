@@ -8,7 +8,7 @@
 
 
  .heading-font {
-	font-family:Catamaran,Helvetica,Arial,sans-serif;
+	font-family:Helvetica,Arial,sans-serif;
 	font-weight:200;
 	letter-spacing:1px
 }
@@ -31,7 +31,7 @@ body {
   
 }
 .navbar-default,.navbar-default .navbar-header .navbar-brand,h1,h2,h3,h4,h5,h6 {
-	font-family:Varela,Helvetica,Arial,sans-serif;
+	font-family:Helvetica,Arial,sans-serif;
 	font-weight:200;
 	letter-spacing:1px;
   color:#111;
@@ -68,7 +68,7 @@ p {
 }
 .navbar-default .navbar-header .navbar-brand {
 	color:#bb0000;
-  font-family: Marmelad;
+	font-family:Helvetica,Arial,sans-serif
 }
 .btn,.navbar-default .nav>li>a {
 	font-family:Lato,Helvetica,Arial,sans-serif;
@@ -299,7 +299,7 @@ footer,section.contact {
 }
 header .header-content .header-content-inner h1 {
     font-size: 80px;
-    font-family: Great Vibes;
+    font-family: Helvetica,Arial,sans-serif;
 }
 section {
 	padding:100px 0
@@ -317,7 +317,7 @@ section.couponsection h2 {
 }
 
 section .title {
-  font-family: Marmelad;
+	font-family:Muli,Helvetica,Arial,sans-serif;
 }
 .coupon {
   width: 570px;
@@ -585,7 +585,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
 	padding: 0px;
 	color: white;
 	  text-shadow: 3px 3px 0px #2c2e38, 5px 5px 0px #5c5f72, 0px 0px 10px rgba(0,0,0,1);
-	  font-family: 'Lobster', cursive;
+	  font-family:Muli,Helvetica,Arial,sans-serif;
 	
 	position: absolute;
 	top: 50%;
@@ -635,7 +635,7 @@ footer ul li a.active,footer ul li a:active,footer ul li a:focus,footer ul li a:
   .unsplash {
 	position: absolute;
 	bottom: 0;
-	font-family: 'Lobster', cursive;
+	font-family:Muli,Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	color: rgba(66, 46, 60, 1);
   }
