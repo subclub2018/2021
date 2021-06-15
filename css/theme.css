@@ -42,7 +42,7 @@ a {
 	transition:all .35s;
 }
 a:focus,a:hover {
-	color:#bb0000
+	color:#c9c9c9
 }
 hr {
 	max-width:100px;
@@ -56,7 +56,8 @@ hr.light {
 p {
 	font-size:18px;
 	line-height:1.5;
-	margin-bottom:20px
+	margin-bottom:20px;
+	text-align:center
 }
 .navbar-default {
 	background-color:#fff;
@@ -75,7 +76,7 @@ p {
 	letter-spacing:2px
 }
 .navbar-default .navbar-header .navbar-brand:focus,.navbar-default .navbar-header .navbar-brand:hover {
-	color:#bb0000
+	color:#bebebe
 }
 .navbar-default .navbar-header .navbar-toggle {
 	font-size:12px;
@@ -92,7 +93,7 @@ p {
 	color:#fdcc52
 }
 .navbar-default .nav>li.active>a,.navbar-default .nav>li.active>a:focus {
-  color: #bb0000!important;
+  color: #c5c5c5!important;
 	background-color:transparent
 }
 .navbar-default .nav>li.active>a:focus:hover,.navbar-default .nav>li.active>a:hover {
@@ -128,7 +129,7 @@ p {
 		color:#222
 	}
 	.navbar-default.affix .navbar-header .navbar-brand:focus,.navbar-default.affix .navbar-header .navbar-brand:hover {
-		color:#bb0000;
+		color:#afafaf;
 	}
 	.navbar-default.affix .nav>li>a,.navbar-default.affix .nav>li>a:focus {
 		color:#222
